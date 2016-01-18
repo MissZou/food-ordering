@@ -1,0 +1,11 @@
+extends layout
+
+
+block content
+    include header.jade
+    form#loginForm(method="post")
+        input#inputUserName(type='text', placeholder='Username',name="inputUserName")
+        br
+        input#loginpassword(type='password', placeholder='password',name="loginpassword")
+        br
+        input#login(type="submit",value="登录")
